@@ -6,9 +6,11 @@ export const productAPI = createApi({
   baseQuery: fetchBaseQuery({ baseUrl: "https://fakestoreapi.com/" }),
   endpoints: (build) => ({
     getProducts: build.query<IProducts[], number>({
-      query: (limit = 10) => `products?limit=${limit}`,
-    }),
+      query: (limit = 10) => `products?limit=${limit}`}),
+    getProductById: build.query<IProducts, number>({
+      query: id => `products/${id}`})
   }),
 });
 
+export const {useGetProductByIdQuery} = productAPI;
 export const {useGetProductsQuery} = productAPI;

@@ -1,10 +1,13 @@
-import React from "react";
-import { Home } from "./components/Home";
+import { BrowserRouter,  } from "react-router-dom";
+import { AppRouter } from "./components/AppRouter";
+import { Navbar } from "./components/UI/Navbar";
+
 
 export const Navigation = () => {
   return (
-    <div>
-      <Home />
-    </div>
+    <BrowserRouter>
+    <Navbar />
+      <AppRouter />
+    </BrowserRouter>
   );
 };
