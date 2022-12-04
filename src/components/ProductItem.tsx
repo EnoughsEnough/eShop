@@ -1,10 +1,20 @@
-import React, { FC } from "react";
+import React, { FC, useState } from "react";
 import styles from "../styles/ProductItem.module.scss";
 import { IProducts } from "./store/product/product.types";
 import { useNavigate } from "react-router-dom";
+import { useActions } from "./hooks/useActions";
+
 
 export const ProductItem: FC<{ product: IProducts }> = ({ product }) => {
   const navigate = useNavigate();
+  const [pushed, setIsPushed] = useState(false)
+  
+  const handleAddProduct = () => {
+    setIsPushed(true)
+  }
+ 
+
+  const {addItem} = useActions()
 
   return (
     <div className={styles.productItem__container}>
@@ -14,9 +24,15 @@ export const ProductItem: FC<{ product: IProducts }> = ({ product }) => {
       </div>
       <div className={styles.productItem__info}>
         <div className={styles.productItem__title}>{product.title}</div>
-        <div className={styles.productItem__price}>{product.price} $</div>
+        <div className={styles.productItem__price}>${product.price} </div>
       </div>
-      <button className={styles.productItem__buttunCart}><i className="fa-sharp fa-solid fa-cart-shopping"></i></button>
+      <div onClick={handleAddProduct}>
+        { pushed === false ?
+      <button className={styles.productItem__buttonCart} onClick={() => addItem(product)}><i className="fa-sharp fa-solid fa-cart-shopping"></i></button>
+          :
+          <button className={styles.productItem__buttonCart__active}><i className="fa-sharp fa-solid fa-cart-shopping"></i></button>
+        }
+      </div>
       </div>
     </div>
   );

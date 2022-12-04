@@ -12,6 +12,10 @@
    @apply flex justify-center mb-3
 }
 
-.productItem__buttunCart {
+.productItem__buttonCart {
     @apply bg-red-600 text-white pt-2 pb-2 pl-7 pr-7 rounded-md hover:bg-red-500 w-full 
+}
+
+.productItem__buttonCart__active {
+    @apply  text-green-500 pt-2 pb-2 pl-7 pr-7 rounded-md  w-full border-emerald-500  border  
 }

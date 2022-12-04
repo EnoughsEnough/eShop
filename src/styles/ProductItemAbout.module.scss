@@ -1,0 +1,84 @@
+.itemAbout__container {
+    @apply font-Georigia  mt-10 pl-1 pr-1 
+}
+
+.image {
+     @apply w-full flex justify-center
+}
+
+.galery {
+    @apply w-16 ml-16 
+   
+}
+.galery__item {
+    @apply mb-24 cursor-pointer 
+}
+
+.mainInfoAboutItem {
+    @apply ml-10
+}
+
+
+.title {
+    @apply text-3xl font-bold mb-4 
+}
+
+.rate {
+    @apply flex mb-8 
+}
+
+.stars {
+    @apply mr-4 text-orange-400 font-medium cursor-pointer
+}
+
+.ratings {
+    @apply text-green-500 font-medium cursor-pointer
+}
+
+.description {
+    @apply text-xl mb-4 font-medium
+}
+
+.price {
+    @apply text-3xl font-bold mb-1
+}
+
+.buySection {
+    @apply flex 
+}
+
+.addToCart {
+ @apply bg-red-600 text-white pt-2 pb-2 pl-7 pr-7 rounded-md hover:bg-red-500 w-32
+}
+
+.chooseAmount {
+    @apply flex ml-6 items-center
+}
+.minus {
+    @apply    text-green-500 rounded-md cursor-pointer text-3xl mr-3 
+}
+.plus {
+    @apply    text-green-500 rounded-md cursor-pointer text-4xl
+}
+.count {
+    @apply font-semibold text-xl mr-3
+}
+
+.comments__section {
+    @apply ml-10 mt-4 
+}
+
+.userName {
+    @apply ml-2
+}
+
+.userName__stars {
+    @apply text-orange-400
+}
+
+.username__info {
+    @apply flex
+}
+.commentsAndReviews {
+    @apply font-semibold text-2xl border-b-2 rounded-t-md border-green-400 ml-10 mt-10
+}
