@@ -1,7 +1,14 @@
 .container {
-    @apply max-w-7xl ml-auto mr-auto pl-1 pr-1 
+    @apply max-w-full ml-auto mr-auto pl-1 pr-1 font-Georigia 
 }
 
 .productsList {
     @apply grid grid-cols-4
+}
+.hotSales {
+    @apply font-bold text-lg text-center text-green-600 mb-10 mt-3 pt-36
+}
+
+.loading {
+    @apply font-bold text-3xl text-center
 }
