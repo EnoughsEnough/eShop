@@ -1,6 +1,6 @@
 import { bindActionCreators } from "@reduxjs/toolkit"
 import { useDispatch } from "react-redux"
-import { cartActions } from "../store/cart.slice"
+import { cartActions } from "../store/cart.slice";
 
 
 const allActions = {
@@ -8,7 +8,7 @@ const allActions = {
 }
 
 export const useActions = () => {
-    const dispatch = useDispatch() 
+    const dispatch = useDispatch();
 
     return bindActionCreators(allActions, dispatch)
 }

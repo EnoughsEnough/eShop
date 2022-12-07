@@ -50,3 +50,13 @@ input:focus {
 .navbar__search-logo {
     margin-right: 5px;
 }
+.cart__amount {
+    display: flex;
+    align-items: center;
+}
+.cart__count {
+    margin-left: 5px;
+    
+    
+
+}

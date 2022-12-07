@@ -1,12 +1,46 @@
 .cart__container {
-    @apply mr-5 ml-5 pt-10 
+    @apply mr-5 ml-5 pt-10 font-Georigia
+}
+.cart__item {
+    @apply flex
 }
 .cartList {
-   
+   @apply shadow-2xl mt-10 mb-10 
 }
 .cart__img {
-    @apply w-36
+    @apply w-44 max-w-xs
 }
-.info {
+.cart__info {
+    @apply ml-4
+}
+.cart__title {
+    @apply font-bold text-xl 
+}
+.cart__description {
+    @apply font-medium text-base mb-3
+}
+.item__price {
+    @apply font-semibold text-xl
+}
+.item__amount {
     @apply flex
+}
+.amount {
+    @apply m-3
+}
+.cart__totalInfo {
+    @apply shadow-2xl pb-2 pt-2
+}
+.cart__total {
+    @apply font-semibold text-lg mb-1
+}
+.cart__itemsTotal {
+    @apply font-normal text-base text-gray-600
+}
+.cart__itemsAmount {
+    @apply font-semibold text-lg 
+}
+
+.cartIsEmpty {
+    @apply text-center text-3xl mt-12 font-bold
 }

@@ -7,7 +7,7 @@
 }
 
 .productItem__image {
-    @apply w-28  flex mb-3 cursor-pointer ml-8 max-h-24
+    @apply w-28  flex mb-3 cursor-pointer ml-8 max-h-24 max-w-2xl
 }
 .productItem__title {
     @apply  justify-center  mb-1 cursor-pointer 

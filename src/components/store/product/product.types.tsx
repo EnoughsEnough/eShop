@@ -11,6 +11,7 @@ export interface IProducts {
     category: string;
     image: string;
     rating: IRating;
+    
 }
 
 export interface Geolocation {
