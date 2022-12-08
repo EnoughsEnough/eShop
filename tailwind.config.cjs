@@ -7,5 +7,11 @@ module.exports = {
   theme: {
     extend: {},
   },
+<<<<<<< Updated upstream
   plugins: [],
+=======
+  plugins: [
+    require('@tailwindcss/line-clamp'),
+  ],
+>>>>>>> Stashed changes
 }

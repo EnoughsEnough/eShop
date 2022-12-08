@@ -3,10 +3,18 @@
 }
 
 .productItem__image {
+<<<<<<< Updated upstream
     @apply w-28 justify-center flex mb-3 cursor-pointer
 }
 .productItem__title {
     @apply flex justify-center  mb-3 cursor-pointer
+=======
+    @apply w-36 max-w-sm h-36 mb-4 cursor-pointer ml-4
+}
+.productItem__title {
+    @apply  justify-center  mb-1 cursor-pointer line-clamp-1
+    
+>>>>>>> Stashed changes
 }
 .productItem__price {
    @apply flex justify-center mb-3

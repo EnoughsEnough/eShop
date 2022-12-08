@@ -1,0 +1,15 @@
+.order__container {
+    @apply max-w-full ml-auto mr-auto pl-5 pr-5 font-Georigia scroll-smooth pt-36 
+}
+.orderTitle {
+    @apply text-center text-3xl font-semibold mb-6
+}
+.OrderList {
+    @apply   font-medium text-lg text-center mb-6
+}
+.orderAmount {
+    @apply text-center font-semibold text-lg
+}
+.order {
+    @apply shadow-2xl pt-6 pb-6
+}
